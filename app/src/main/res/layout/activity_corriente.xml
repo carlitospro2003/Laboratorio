@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CorrienteActivity">
+
+    <TextView
+        android:id="@+id/textViewCorriente1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="109dp"
+        android:text="Bienvenido al Control"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCorriente2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="150dp"
+        android:text="de Corriente"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCorriente1" />
+
+    <ImageView
+        android:id="@+id/imageView1Corriente"
+        android:layout_width="124dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCorriente2"
+        app:srcCompat="@drawable/corriente" />
+
+    <TextView
+        android:id="@+id/textViewCorriente3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="91dp"
+        android:text="Status"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView1Corriente"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCorriente1" />
+
+    <TableLayout
+        android:layout_width="186dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="33dp"
+        android:stretchColumns="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView1Corriente"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCorriente3">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewValores"
+                android:text="valores"
+                android:padding="3dip"/>
+
+            <TextView
+                android:id="@+id/textViewResultados"
+                android:text="Resultados"
+                android:padding="3dip"
+                android:gravity="right"/>
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewCorriente4"
+                android:text="Corriente"
+                android:padding="3dip"/>
+
+            <TextView
+                android:id="@+id/textViewResCorriente"
+                android:text="0"
+                android:padding="3dip"
+                android:gravity="right"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewPotencia"
+                android:text="Potencia"
+                android:padding="3dip"/>
+
+            <TextView
+                android:id="@+id/textViewResPotencia"
+                android:text="0"
+                android:padding="3dip"
+                android:gravity="right"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="70dp"
+        android:text="Este apartado nos indicara cuanta corriente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1Corriente" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="109dp"
+        android:text="voltaje y amperaje esta pasando"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
+
+    <Button
+        android:id="@+id/buttonCorriente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="262dp"
+        android:text="Regresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <Button
+        android:id="@+id/bCorriente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="Pedir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toEndOf="@+id/buttonCorriente"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
